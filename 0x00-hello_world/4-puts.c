@@ -1,12 +1,7 @@
 #include <stdio.h>
-/**
- * main - Entry point
- * 
- * Description: 'the program's description'
- * @parameter: describe the parameter
- * 
- * Return: Always 0 (Success)
- */
+/** 
+* Description: 'Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.'
+*/
 
 int main(void)
 {
