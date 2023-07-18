@@ -2,7 +2,7 @@
 
 /**
 * print_last_digit - Prints the last digit of a number.
-* @n: The number to extract the last digit from.
+* @n: The number.
 *
 * Return: The value of the last digit.
 */
@@ -17,5 +17,5 @@ last_digit = n % 10;
 
 _putchar('0' + last_digit);
 
-return last_digit;
+return (last_digit);
 }
