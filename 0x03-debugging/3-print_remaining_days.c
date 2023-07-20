@@ -18,7 +18,7 @@ void print_remaining_days(int month, int day, int year)
     {
         if (month > 2)
         {
-            total_days = 60 + day - 1; // Account for the leap year day (Feb 29th)
+            total_days = 60 + day - 1; /* Account for the leap year day (Feb 29th) */
         }
         else if (month == 2 && day == 29)
         {
