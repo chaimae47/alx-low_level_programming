@@ -28,5 +28,5 @@ else
 printf("There is no prime factor other than 1.\n");
 }
 
-return 0;
+return (0);
 }
