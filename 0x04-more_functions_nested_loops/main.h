@@ -1,6 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MEME_H
+#define MEME_H
 
-int _isdigit(int c); /* Function prototype for _isdigit */
+int _isupper(int c);
+int _isdigit(int c);
+int mul(int a, int b);
+/* Ajoutez ici les prototypes des autres fonctions si vous en avez plus */
 
-#endif /* MAIN_H */
+#endif /* MEME_H */
