@@ -1,9 +1,11 @@
-#ifndef MEME_H
-#define MEME_H
+#ifndef MAIN_H
+#define MAIN_H
 
+#include <stdio.h>
+
+/* Function prototypes */
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
-/* Ajoutez ici les prototypes des autres fonctions si vous en avez plus */
 
-#endif /* MEME_H */
+#endif /* MAIN_H */
