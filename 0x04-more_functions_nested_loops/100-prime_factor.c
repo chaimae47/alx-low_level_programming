@@ -2,52 +2,31 @@
 #include <math.h>
 
 /**
-* is_prime - Check if a number is prime
-* @num: The number to check
+* main - Entry point
 *
-* Return: 1 if the number is prime, 0 otherwise
+* Return: Always 0
 */
-int is_prime(unsigned long num)
-{
-unsigned long i;
-
-if (num <= 1)
-return 0;
-
-for (i = 2; i <= sqrt(num); i++)
-{
-if (num % i == 0)
-return 0;
-}
-
-return 1;
-}
-
-/**
-* largest_prime_factor - Find the largest prime factor of a number
-* @num: The number to find the largest prime factor for
-*
-* Return: The largest prime factor of the number
-*/
-unsigned long largest_prime_factor(unsigned long num)
-{
-unsigned long i;
-
-for (i = sqrt(num); i >= 2; i--)
-{
-if (num % i == 0 && is_prime(i))
-return i;
-}
-
-return num;
-}
-
 int main(void)
 {
-unsigned long number = 612852475143;
-unsigned long largest_factor = largest_prime_factor(number);
+long number = 612852475143;
+long i;
 
-printf("%lu\n", largest_factor);
+for (i = 2; i * i <= number; i++)
+{
+while (number % i == 0)
+{
+number /= i;
+}
+}
+
+if (number > 1)
+{
+printf("%ld\n", number);
+}
+else
+{
+printf("There is no prime factor other than 1.\n");
+}
 
 return 0;
 }
