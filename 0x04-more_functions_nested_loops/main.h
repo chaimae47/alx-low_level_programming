@@ -15,4 +15,5 @@ void print_line(int n); /* Function prototype for print_line */
 void print_diagonal(int n); /* Function prototype for print_diagonal */
 void print_square(int size); /* Function prototype for print_square */
 void print_triangle(int size);
+void print_number(int n);
 #endif /* MAIN_H */
