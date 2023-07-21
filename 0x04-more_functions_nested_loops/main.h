@@ -11,5 +11,5 @@ int mul(int a, int b);  /* Function prototype for mul */
 void print_numbers(void); /* Function prototype for print_numbers */
 void print_most_numbers(void); /* Function prototype for print_most_numbers */
 void more_numbers(void); /* Function prototype for more_numbers */
-
+void print_line(int n); /* Function prototype for print_line */
 #endif /* MAIN_H */
