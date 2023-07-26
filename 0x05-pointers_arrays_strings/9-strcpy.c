@@ -11,14 +11,14 @@ char *_strcpy(char *dest, char *src)
 {
 int i = 0;
 
-encountered
+/* Copy characters from src to dest until the null terminator is encountered */
 while (src[i] != '\0')
 {
 dest[i] = src[i];
 i++;
 }
 
-dest[i] = '\0'; 
+dest[i] = '\0'; /* Add the terminating null byte to dest */
 
 return dest;
 }
