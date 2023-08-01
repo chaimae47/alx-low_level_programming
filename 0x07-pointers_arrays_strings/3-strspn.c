@@ -15,7 +15,7 @@ while (*s != '\0')
 {
 found = 0;
 
-/* Check if the current character is in the accept string*/
+/* Check if the current character is in the accept string */
 while (*accept != '\0')
 {
 if (*s == *accept)
@@ -26,13 +26,13 @@ break;
 accept++;
 }
 
-/* If the character is not in the accept string, stop the loop*/
+/* If the character is not in the accept string, stop the loop */
 if (!found)
 break;
 
 count++;
 s++;
-accept = accept - count; /* Reset the pointer to the beginning of accept*/
+accept = accept - count; 
 }
 
 return (count);
