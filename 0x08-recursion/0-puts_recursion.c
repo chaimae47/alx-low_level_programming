@@ -7,12 +7,14 @@
 */
 void _puts_recursion(char *s)
 {
-if (*s == '\0') /* Base case: If the current character is '\0', we have reached the end of the string.*/
+/*If the current character is '\0', we have reached the end of the string.*/
+if (*s == '\0') 
 {
-_putchar('\n'); /* Print a new line and return to the previous recursive call.*/
+_putchar('\n'); /* Print a new line and return the previous recursive call.*/
 return;
 }
-
-_putchar(*s); /* Print the current character.*/
-_puts_recursion(s + 1); /* Recursively call the function with the next character in the string.*/
+/* Print the current character.*/
+_putchar(*s); 
+/* Recursively call the function with the next character in the string.*/
+_puts_recursion(s + 1); 
 }
