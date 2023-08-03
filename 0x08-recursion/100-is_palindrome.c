@@ -15,7 +15,7 @@ return (1 + _strlen(s + 1));
 }
 
 /**
-* is_palindrome_recursive.
+* is_palindrome_recursive-check if a string is a palindrome.
 *
 * @s: The input string.
 * @start: The starting index.
@@ -34,7 +34,7 @@ return (is_palindrome_recursive(s, start + 1, end - 1));
 }
 
 /**
-* is_palindrome.
+* is_palindrome-Checks if a string is a palindrome using recursion.
 *
 * @s: The input string.
 * Return: 1 if the string is a palindrome, otherwise 0.
