@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 int cents, coins = 0;
 
-/* Check if the number of arguments is exactly 2 (including program name)*/
+/* Check if the number of arguments is exactly 2 */
 if (argc != 2)
 {
 printf("Error\n");
