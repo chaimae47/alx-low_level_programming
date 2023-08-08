@@ -5,7 +5,7 @@
 * @s1: The first string.
 * @s2: The second string.
 *
-* Return: A pointer to a newly allocated space 
+* Return: A pointer to a newly allocated space
 * in memory containing the concatenated string,
 * or NULL if allocation fails or if s1 or s2 is NULL.
 */
@@ -27,7 +27,7 @@ len2++;
 concatenated = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
 if (concatenated == NULL)
-return NULL;
+return (NULL);
 
 for (i = 0; i < len1; i++)
 concatenated[i] = s1[i];
