@@ -20,17 +20,15 @@ return (NULL);
 while (str[length] != '\0')
 length++;
 
-/* Allocate memory for the duplicated string
-* (+1 for the null terminator)
-*/
+/* Allocate memory for the duplicated string(+1 for the null terminator)*/
+
 duplicate = (char *)malloc((length + 1) * sizeof(char));
 
 if (duplicate == NULL)
 return (NULL);
 
-/* Copy the contents of the input string
-* to the duplicated string
-*/
+/* Copy the contents of the input string to the duplicated string */
+
 for (i = 0; i <= length; i++)
 duplicate[i] = str[i];
 
