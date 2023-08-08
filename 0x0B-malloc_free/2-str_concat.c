@@ -1,37 +1,38 @@
-
 #include <stdlib.h>
 
 /**
-* create_array - Creates an array of characters
-* and initializes it with a specific character.
-* @size: The size of the array to create.
-* @c: The character to initialize the array with.
+* str_concat - Concatenates two strings.
+* @s1: The first string.
+* @s2: The second string.
 *
-* Return: A pointer to the created array,
-* or NULL if allocation fails or size is 0.
+* Return: A pointer to a newly allocated space 
+* in memory containing the concatenated string,
+* or NULL if allocation fails or if s1 or s2 is NULL.
 */
-char *create_array(unsigned int size, char c)
+char *str_concat(char *s1, char *s2)
 {
-char *array;
+char *concatenated;
+unsigned int len1 = 0, len2 = 0, i, j;
 
-/* Check if size is 0 */
-if (size == 0)
-return (NULL);
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 
-/* Allocate memory for the array */
-array = (char *)malloc(size * sizeof(char));
+while (s1[len1] != '\0')
+len1++;
+while (s2[len2] != '\0')
+len2++;
 
-/* Check if memory allocation was successful */
-if (array == NULL)
-return (NULL);
+concatenated = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
-/* Initialize the array with the specified character */
-{
-unsigned int i;
+if (concatenated == NULL)
+return NULL;
 
-for (i = 0; i < size; i++)
-array[i] = c;
-}
+for (i = 0; i < len1; i++)
+concatenated[i] = s1[i];
+for (j = 0; j <= len2; j++)
+concatenated[i + j] = s2[j];
 
-return (array);
+return (concatenated);
 }
