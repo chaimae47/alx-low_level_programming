@@ -1,12 +1,4 @@
 #include "dog.h"
-
-/*
-* File: 1-init_dog.c
-* Author: Your Name
-* Description: This file contains
-the definition of the init_dog function.
-*/
-
 /*
 * init_dog - Initializes a struct dog
 * @d: Pointer to the struct dog to be initialized
