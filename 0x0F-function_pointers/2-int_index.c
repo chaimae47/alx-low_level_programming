@@ -22,7 +22,6 @@ int int_index(int *array, int size, int (*cmp)(int))
     /* Iterate through the array */
     for (i = 0; i < size; i++)
     {
-        /* If cmp function does not return 0 for the current element */
         if (cmp(array[i]) != 0)
             return i;
     }
