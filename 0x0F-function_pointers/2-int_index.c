@@ -17,14 +17,14 @@ int i;
 
 /* Check for NULL array, NULL cmp, or size <= 0 */
 if (array == NULL || cmp == NULL || size <= 0)
-return -1;
+return (-1);
 
 /* Iterate through the array */
 for (i = 0; i < size; i++)
 {
 if (cmp(array[i]) != 0)
-return i;
+return (i);
 }
 
-return -1;
+return (-1);
 }
