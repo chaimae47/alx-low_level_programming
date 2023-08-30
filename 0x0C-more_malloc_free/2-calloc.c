@@ -10,7 +10,8 @@
 * Return: A pointer to the allocated memory,
 * or NULL on failure
 */
-void *_calloc(unsigned int nmemb, unsigned int size) {
+void *_calloc(unsigned int nmemb, unsigned int size) 
+{
 void *ptr;
 
 if (nmemb == 0 || size == 0)
