@@ -6,22 +6,25 @@
 * @n: The number for which the square root is to be calculated.
 * Return: The natural square root of 'n', or -1 .
 */
+int find_sqrt(int n, int guess);
+
 int _sqrt_recursion(int n)
 {
-int i;
+    if (n < 0)
+        return (-1);
+    else if (n == 0 || n == 1)
+        return (n);
+    else
+        return (find_sqrt(n, n / 2));
+}
 
-if (n < 0)
-return (-1);
-
-if (n == 0 || n == 1)
-return (n);
-
-
-for (i = 1; i * i <= n; i++)
+int find_sqrt(int n, int guess)
 {
-if (i * i == n)
-return (i);
+    if (guess * guess == n)
+        return (guess);
+    else if (guess * guess < n)
+        return (find_sqrt(n, guess + 1));
+    else
+        return (find_sqrt(n, guess - 1));
 }
 
-return (-1);
-}
