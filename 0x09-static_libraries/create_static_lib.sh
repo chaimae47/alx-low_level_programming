@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# Compile all .c files into .o files
+# Compile all .c files into object files and create the static library liball.a
 gcc -c *.c
+ar rc liball.a *.o
 
-# Create the static library liball.a
-ar rcs liball.a *.o
+# Index the library for faster access (optional, but recommended)
+ranlib liball.a
 
-# Remove the .o files as they are already archived in liball.a
+# Clean up object files (optional)
 rm *.o
